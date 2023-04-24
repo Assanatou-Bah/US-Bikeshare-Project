@@ -63,7 +63,6 @@ def get_filters():
         print("Invalid day of the week. Please try again.")
         day = input("Enter a day of the week (all, monday, tuesday, ..., sunday): ").lower()
 
-
     print('-'*40)
     return city, month, day
 
@@ -190,8 +189,7 @@ def user_stats(df):
     except KeyError:
         print('\nGender data not available for this city.')
 
-    # Display earliest, most recent, and most common year of birth
-    
+    # Display earliest, most recent, and most common year of birth  
     try:
         earliest_birth_year = int(df['Birth Year'].min())
         most_recent_birth_year = int(df['Birth Year'].max())
@@ -206,12 +204,9 @@ def user_stats(df):
     except ValueError:
         print('\nBirth year data is incomplete for this city.')
     
-
-    
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
    
-
 
 def display_data(df):
     """Display raw data upon request by the user"""
@@ -223,7 +218,7 @@ def display_data(df):
     view_data = input("\nWould you like to view 5 rows of individual trip data? Enter yes or no\n").lower()
     
     while True:
-        # Display 5 rows of the data frame
+        # Display 5 rows of the data frame if user entered yes
         if view_data == 'yes': 
             print(df.iloc[start_loc:end_loc])
             start_loc += 5
