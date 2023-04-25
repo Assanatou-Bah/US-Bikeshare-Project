@@ -194,11 +194,12 @@ def user_stats(df):
     
     try:
         earliest_birth_year = int(df['Birth Year'].min())
-        most_recent_birth_year = int(df['Birth Year'].max())
-        most_common_birth_year = int(df['Birth Year'].mode()[0])
-        
         print('\nEarliest year of birth:', earliest_birth_year)
+        
+        most_recent_birth_year = int(df['Birth Year'].max())
         print('Most recent year of birth:', most_recent_birth_year)
+        
+        most_common_birth_year = int(df['Birth Year'].mode()[0])
         print('Most common year of birth:', most_common_birth_year)
         
     except KeyError:
