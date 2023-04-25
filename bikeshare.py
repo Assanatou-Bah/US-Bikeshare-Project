@@ -208,7 +208,6 @@ def user_stats(df):
         print('\nBirth year data is incomplete for this city.')
     
 
-    
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
    
@@ -248,6 +247,7 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
+      
 
 
 if __name__ == "__main__":
