@@ -16,13 +16,24 @@ In this project, I made use of Python(spyder)to explore data related to bike sha
 
 Statistics Computed:
 
-1 Popular travel times (i.e., occurs most often in the start time) - most common month, most common day of week, most common hour of day
+1. Popular travel times (i.e., occurs most often in the start time) 
+    * most common month
+    * most common day of week
+    * most common hour of day
 
-2 Popular stations and trip- most common start station, most common end station, most common trip from start to end (i.e., most frequent combination of start station and end station)
+2. Popular stations and trip
+    * most common start station
+    * most common end station
+    * most common trip from start to end (i.e., most frequent combination of start station and end station)
 
-3 Trip duration - total travel time, average travel time
+3. Trip duration
+   * total travel time
+   * average travel time
 
-4 User info - counts of each user type, counts of each gender (only available for NYC and Chicago), earliest, most recent, most common year of birth (only available for NYC and Chicago)
+4. User info
+   * counts of each user type
+   * counts of each gender (only available for NYC and Chicago)
+   * earliest, most recent, most common year of birth (only available for NYC and Chicago)
 
 ### Files used
 The files used are from three major cities in the United States:
